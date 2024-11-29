@@ -1,0 +1,16 @@
+<!-- index.ejs -->
+<%- include('partials/header.ejs') %>
+<%- include('partials/main_nav.ejs') %>
+
+<main>
+  <div class="jumbotron">
+    <h1 class="display-4">Welcome to <%= title %></h1>
+    <h2 class="lead"><%= section %></h2>
+
+    <form action="/public" class="inline">
+      <button type="submit" class="ticket">Report</button>
+    </form>
+  </div>
+</main>
+
+<%- include('partials/scripts.ejs') %>
